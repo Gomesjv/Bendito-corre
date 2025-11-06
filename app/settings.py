@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-quqcs&#w+(cs9e!y3q4ablzch6(64srcq1!9q=^sg(*p+49$tn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "bendito-corre.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
