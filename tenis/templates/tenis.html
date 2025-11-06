@@ -173,16 +173,16 @@
             </div>
 
             <div class="card-body">
-              <h3 class="card-title">{{ item.brand }} {{ item.name }}</h3>
-              <p class="card-sub">{{ item.size }} • {{ item.category|default:"-" }}</p>
+              <h3 class="card-title"> Marca :{{ item.brand }} </h3>
+              <h3 class="card-title">Nome :{{ item.name }}</h3>
+              <p class="card-sub">Preço : {{ item.price }}</p>
 
               <div class="card-meta">
-                <div class="price">R$ {{ item.price }}</div>
 
                 {# botão WhatsApp opcional: ajuste número (formato 55DDDNNNNNNNN) #}
                 <a
                   class="whatsapp-btn"
-                  href="https://wa.me/5547XXXXXXXX?text=Ol%C3%A1!%20Tenho%20interesse%20no%20t%C3%AAnis%20{{ item.name|urlencode }}%20na%20cor%20{{ item.color|urlencode }}."
+                  href="https://wa.me/5547984725256?text=Ol%C3%A1!%20Tenho%20interesse%20no%20t%C3%AAnis%20{{ item.brand|urlencode }} {{ item.name|urlencode }}"
                   target="_blank"
                   rel="noopener noreferrer">
                   Comprar

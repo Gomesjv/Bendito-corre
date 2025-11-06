@@ -95,11 +95,6 @@
         <img src="{% static 'images/no-image.png' %}" alt="sem imagem">
       {% endif %}
       <h2>{{ object.brand }} {{ object.model }}</h2>
-      <p><strong>Ano de fabricação:</strong> {{ object.factory_year }}</p>
-      <p><strong>Ano do modelo:</strong> {{ object.model_year }}</p>
-      {% if object.plate %}
-        <p><strong>Placa:</strong> {{ object.plate }}</p>
-      {% endif %}
       <p><strong>Preço:</strong> R$ {{ object.value }}</p>
       {% if object.bio %}
         <p><strong>Descrição:</strong> {{ object.bio }}</p>
