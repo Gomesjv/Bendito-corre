@@ -180,13 +180,20 @@
               <div class="card-meta">
 
                 {# botão WhatsApp opcional: ajuste número (formato 55DDDNNNNNNNN) #}
-                <a
-                  class="whatsapp-btn"
-                  href="https://wa.me/5547984725256?text=Ol%C3%A1!%20Tenho%20interesse%20no%20t%C3%AAnis%20{{ item.brand|urlencode }} {{ item.name|urlencode }}"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Comprar
-                </a>
+               <a
+  class="whatsapp-btn"
+  href="https://wa.me/5547942525?text={{ 
+    ('Olá! Tenho interesse no tênis ' 
+    |add:item.name
+    |add:' na cor '
+    |add:item.color
+    |add:'. Link: '
+    |add:request.build_absolute_uri
+    )|urlencode }}"
+  target="_blank"
+  rel="noopener noreferrer">
+  Comprar
+</a>
               </div>
             </div>
           </a>
